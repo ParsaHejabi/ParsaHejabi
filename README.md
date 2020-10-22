@@ -45,6 +45,11 @@
 ### 📺 Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
+- [TOONEL Vol.2 - Siyah Piano Cover | CallMeParsa](https://www.youtube.com/watch?v=0Jzj7wo7W_g)
+- [Authentication in NodeJS - Twitch Live Stream | CallMeParsa](https://www.youtube.com/watch?v=Y5jCGo7ZW7U)
+- [Making requests in React JS, Using React Router and Component Libraries | CallMeParsa](https://www.youtube.com/watch?v=4sfiJC7Wl4E)
+- [Setting up a web server using Express JS | CallMeParsa](https://www.youtube.com/watch?v=oCtmk2uVmlk)
+- [JavaScript Up & Going | CallMeParsa](https://www.youtube.com/watch?v=5q2jbWiUHAE)
 <!-- YOUTUBE:END -->
 
 ➡️ [more videos...][youtube]
