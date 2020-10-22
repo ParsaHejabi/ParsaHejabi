@@ -51,12 +51,9 @@
 
 ---
 
-<details>
-  <summary>:zap: GitHub Stats</summary>
+### GitHub Stats
 
-  <img align="left" alt="Pasra's GitHub Stats" src="https://github-readme-stats.parsahejabi.vercel.app//api?username=ParsaHejabi&show_icons=true&hide_border=true&theme=radical" />
-
-</details>
+<img align="left" alt="Pasra's GitHub Stats" src="https://github-readme-stats.parsahejabi.vercel.app//api?username=ParsaHejabi&show_icons=true&hide_border=true&theme=radical" />
 
 [website]: https://parsahejabi.com/
 [twitter]: https://twitter.com/callme_parsa
