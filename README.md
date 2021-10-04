@@ -48,7 +48,6 @@
 ### 📺 Latest YouTube Videos
 
 <!-- YOUTUBE:START -->
-
 - [Mehrad Hidden, SEFR - Barf Cover | CallMeParsa](https://www.youtube.com/watch?v=6c9Is7s_VgE)
 - [TOONEL Vol.2 - Siyah Piano Cover | CallMeParsa](https://www.youtube.com/watch?v=0Jzj7wo7W_g)
 - [Authentication in NodeJS - Twitch Live Stream | CallMeParsa](https://www.youtube.com/watch?v=Y5jCGo7ZW7U)
