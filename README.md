@@ -3,8 +3,6 @@
 [![Website](https://img.shields.io/website?label=parsahejabi.com&style=for-the-badge&url=https%3A%2F%2Fparsahejabi.com%2F)](https://parsahejabi.com/)
 [![Twitter Follow](https://img.shields.io/twitter/follow/callme_parsa?color=1DA1F2&logo=twitter&style=for-the-badge)](https://twitter.com/intent/follow?screen_name=callme_parsa)
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=ParsaHejabi.visitor-badge)
-
 ## I'm a Graduate student in Computer Science (Artificial Intelligence)
 
 ### Connect with me
