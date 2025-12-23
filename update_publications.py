@@ -128,7 +128,8 @@ def format_publications_markdown(publications: List[Dict]) -> str:
     if not publications:
         return "*No publications found. Please update publications.json manually or wait for automatic update.*\n"
     
-    markdown = ""
+    markdown = "*Publications are automatically updated weekly from my [Google Scholar profile](https://scholar.google.com/citations?user=icZ4Gd0AAAAJ&hl=en).*\n\n"
+    
     for i, pub in enumerate(publications, 1):
         title = pub['title']
         if pub.get('url'):

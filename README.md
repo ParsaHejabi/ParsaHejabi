@@ -7,6 +7,8 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 <!-- PUBLICATIONS_START -->
 ## 📚 Publications
 
+*Publications are automatically updated weekly from my [Google Scholar profile](https://scholar.google.com/citations?user=icZ4Gd0AAAAJ&hl=en).*
+
 1. **[Investigating Prompt Consistency in Text Generation for NLP Tasks](https://arxiv.org/abs/2403.07343)**
    - Authors: Parsa Hejabi, Elahe Khatibi, Deepa Tilwani, Sadid Hasan, Sourav Amin, Priyam Tejaswin, Donatello Teutonico, Zhichao Yang
    - Year: 2024 | Venue: arXiv preprint arXiv:2403.07343
