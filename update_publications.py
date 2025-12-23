@@ -14,6 +14,11 @@ import sys
 import time
 from typing import List, Dict
 
+# Configuration constants
+DEFAULT_SCHOLAR_ID = 'icZ4Gd0AAAAJ'  # Parsa Hejabi's Google Scholar ID
+SCHOLAR_REQUEST_DELAY = 2  # Seconds to wait before making Scholar requests
+PUBLICATION_PROCESS_DELAY = 1  # Seconds to wait between processing publications
+
 
 def fetch_publications_scholarly(scholar_id: str) -> List[Dict]:
     """
@@ -39,7 +44,7 @@ def fetch_publications_scholarly(scholar_id: str) -> List[Dict]:
             print("Attempting direct connection...", file=sys.stderr)
         
         # Add a small delay to be respectful to Google's servers
-        time.sleep(2)
+        time.sleep(SCHOLAR_REQUEST_DELAY)
         
         # Search for author by ID
         print(f"Searching for author with ID: {scholar_id}")
@@ -80,7 +85,7 @@ def fetch_publications_scholarly(scholar_id: str) -> List[Dict]:
                 })
                 
                 # Be respectful with rate limiting
-                time.sleep(1)
+                time.sleep(PUBLICATION_PROCESS_DELAY)
             except Exception as pub_error:
                 print(f"Error processing publication {i+1}: {pub_error}", file=sys.stderr)
                 continue
@@ -191,7 +196,7 @@ def update_readme(publications_md: str) -> bool:
 def main():
     """Main function."""
     # Get Google Scholar ID from environment variable or use default
-    scholar_id = os.environ.get('SCHOLAR_ID', 'icZ4Gd0AAAAJ')
+    scholar_id = os.environ.get('SCHOLAR_ID', DEFAULT_SCHOLAR_ID)
     
     # Try to fetch from Google Scholar
     print("Attempting to fetch publications from Google Scholar...")
