@@ -16,6 +16,7 @@ from typing import List, Dict
 
 # Configuration constants
 DEFAULT_SCHOLAR_ID = 'icZ4Gd0AAAAJ'  # Parsa Hejabi's Google Scholar ID
+SCRAPER_API_KEY_ENV = 'SCRAPER_API_KEY'
 SCHOLAR_REQUEST_DELAY = 2  # Seconds to wait before making Scholar requests
 PUBLICATION_PROCESS_DELAY = 1  # Seconds to wait between processing publications
 
@@ -29,19 +30,43 @@ def fetch_publications_scholarly(scholar_id: str) -> List[Dict]:
     try:
         from scholarly import scholarly, ProxyGenerator
         
-        # Try to set up a proxy generator to avoid rate limiting
-        try:
+        def setup_proxy() -> bool:
             pg = ProxyGenerator()
-            success = pg.ScraperAPI(os.environ.get('SCRAPER_API_KEY', ''))
-            if not success:
-                # Try free proxies as fallback
-                success = pg.FreeProxies()
-            if success:
+            proxy_configured = False
+
+            scraper_api_key = os.environ.get(SCRAPER_API_KEY_ENV, '').strip()
+
+            def attempt(config_fn, failure_message: str) -> bool:
+                try:
+                    configured = config_fn()
+                    if not configured:
+                        print(failure_message, file=sys.stderr)
+                    return configured
+                except Exception as proxy_error:
+                    print(f"{failure_message} ({proxy_error})", file=sys.stderr)
+                    return False
+
+            if scraper_api_key:
+                proxy_configured = attempt(
+                    lambda: pg.ScraperAPI(scraper_api_key),
+                    "Note: ScraperAPI proxy setup failed; falling back to free proxies.",
+                )
+
+            if not proxy_configured:
+                proxy_configured = attempt(
+                    pg.FreeProxies,
+                    "Note: Free proxy setup failed; proceeding without proxy.",
+                )
+
+            if proxy_configured:
                 scholarly.use_proxy(pg)
                 print("Using proxy to access Google Scholar...")
-        except Exception as proxy_error:
-            print(f"Note: Could not set up proxy: {proxy_error}", file=sys.stderr)
-            print("Attempting direct connection...", file=sys.stderr)
+            else:
+                print("Note: No proxy available; proceeding without proxy (requests may be rate limited).", file=sys.stderr)
+
+            return proxy_configured
+
+        proxy_configured = setup_proxy()
         
         # Add a small delay to be respectful to Google's servers
         time.sleep(SCHOLAR_REQUEST_DELAY)
