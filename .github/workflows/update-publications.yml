@@ -1,6 +1,9 @@
 name: Update Publications
 
 on:
+  push:
+    branches:
+      - main
   schedule:
     # Run every Monday at 00:00 UTC (weekly)
     - cron: '0 0 * * 1'
