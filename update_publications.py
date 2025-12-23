@@ -29,19 +29,27 @@ def fetch_publications_scholarly(scholar_id: str) -> List[Dict]:
     try:
         from scholarly import scholarly, ProxyGenerator
         
-        # Try to set up a proxy generator to avoid rate limiting
-        try:
-            pg = ProxyGenerator()
-            success = pg.ScraperAPI(os.environ.get('SCRAPER_API_KEY', ''))
-            if not success:
-                # Try free proxies as fallback
-                success = pg.FreeProxies()
-            if success:
-                scholarly.use_proxy(pg)
-                print("Using proxy to access Google Scholar...")
-        except Exception as proxy_error:
-            print(f"Note: Could not set up proxy: {proxy_error}", file=sys.stderr)
-            print("Attempting direct connection...", file=sys.stderr)
+        pg = ProxyGenerator()
+        proxy_configured = False
+
+        scraper_api_key = os.environ.get('SCRAPER_API_KEY')
+        if scraper_api_key:
+            try:
+                proxy_configured = pg.ScraperAPI(scraper_api_key)
+            except Exception as proxy_error:
+                print(f"Note: Could not set up ScraperAPI proxy: {proxy_error}", file=sys.stderr)
+
+        if not proxy_configured:
+            try:
+                proxy_configured = pg.FreeProxies()
+            except Exception as proxy_error:
+                print(f"Note: Could not set up free proxy: {proxy_error}", file=sys.stderr)
+
+        if proxy_configured:
+            scholarly.use_proxy(pg)
+            print("Using proxy to access Google Scholar...")
+        else:
+            print("Proceeding without proxy; requests may be rate limited.", file=sys.stderr)
         
         # Add a small delay to be respectful to Google's servers
         time.sleep(SCHOLAR_REQUEST_DELAY)
