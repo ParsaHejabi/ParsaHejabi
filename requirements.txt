@@ -1,1 +1,2 @@
-scholarly
+scholarly==1.7.11
+

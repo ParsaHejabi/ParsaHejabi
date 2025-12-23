@@ -123,12 +123,16 @@ def save_publications_cache(publications: List[Dict]):
         print(f"Error saving cache file: {e}", file=sys.stderr)
 
 
-def format_publications_markdown(publications: List[Dict]) -> str:
+def format_publications_markdown(publications: List[Dict], scholar_id: str = None) -> str:
     """Format publications as markdown list."""
     if not publications:
         return "*No publications found. Please update publications.json manually or wait for automatic update.*\n"
     
-    markdown = "*Publications are automatically updated weekly from my [Google Scholar profile](https://scholar.google.com/citations?user=icZ4Gd0AAAAJ&hl=en).*\n\n"
+    # Add note with link to Google Scholar profile if scholar_id is provided
+    markdown = ""
+    if scholar_id:
+        scholar_url = f"https://scholar.google.com/citations?user={scholar_id}&hl=en"
+        markdown = f"*Publications are automatically updated weekly from my [Google Scholar profile]({scholar_url}).*\n\n"
     
     for i, pub in enumerate(publications, 1):
         title = pub['title']
@@ -186,8 +190,8 @@ def update_readme(publications_md: str) -> bool:
 
 def main():
     """Main function."""
-    # Google Scholar ID for Parsa Hejabi
-    scholar_id = 'icZ4Gd0AAAAJ'
+    # Get Google Scholar ID from environment variable or use default
+    scholar_id = os.environ.get('SCHOLAR_ID', 'icZ4Gd0AAAAJ')
     
     # Try to fetch from Google Scholar
     print("Attempting to fetch publications from Google Scholar...")
@@ -217,7 +221,7 @@ def main():
         print(f"\nUsing {len(publications)} publications")
     
     print("\nFormatting publications as markdown...")
-    publications_md = format_publications_markdown(publications)
+    publications_md = format_publications_markdown(publications, scholar_id)
     
     print("Updating README.md...")
     success = update_readme(publications_md)

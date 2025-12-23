@@ -27,6 +27,8 @@ jobs:
           pip install -r requirements.txt
       
       - name: Update publications
+        env:
+          SCHOLAR_ID: 'icZ4Gd0AAAAJ'
         run: |
           python update_publications.py
       
