@@ -61,7 +61,7 @@ def fetch_publications_serpapi(scholar_id: str) -> List[Dict]:
             
             # Get citations count
             cited_by = article.get('cited_by', {})
-            citations = cited_by.get('value', 0) if isinstance(cited_by, dict) else 0
+            citations = (cited_by.get('value') or 0) if isinstance(cited_by, dict) else 0
             
             # Get publication URL
             url = article.get('link', '')
@@ -79,7 +79,7 @@ def fetch_publications_serpapi(scholar_id: str) -> List[Dict]:
             })
         
         # Sort by year (descending) and then by citations
-        publications.sort(key=lambda x: (-(int(x['year']) if x['year'] != 'N/A' and str(x['year']).isdigit() else 0), -x['citations']))
+        publications.sort(key=lambda x: (-(int(x['year']) if x['year'] != 'N/A' and str(x['year']).isdigit() else 0), -(x['citations'] or 0)))
         
         # Save to cache file
         if publications:
