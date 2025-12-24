@@ -1,0 +1,42 @@
+[
+  {
+    "title": "Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs",
+    "authors": "P Hejabi, E Rahmati, AS Ziabari, M Dehghani",
+    "year": "2025",
+    "venue": "arXiv preprint arXiv:2510.14242, 2025",
+    "citations": 0,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC"
+  },
+  {
+    "title": "Reinforced multiple instance selection for speaker attribute prediction",
+    "authors": "AS Ziabari, A Omrani, P Hejabi, P Golazizian, B Kennedy, P Piray, ...",
+    "year": "2024",
+    "venue": "Proceedings of the 2024 Conference of the North American Chapter of the …, 2024",
+    "citations": 6,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC"
+  },
+  {
+    "title": "Evaluating Creativity and Deception in Large Language Models: A Simulation Framework for Multi-Agent Balderdash",
+    "authors": "P Hejabi, E Rahmati, AS Ziabari, P Golazizian, J Thomason, M Dehghani",
+    "year": "2024",
+    "venue": "ACL 2024, 2024",
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:9yKSN-GCB0IC"
+  },
+  {
+    "title": "A multi-perspective machine learning approach to evaluate police-driver interaction in Los Angeles",
+    "authors": "BAT Grahama, L Brown, G Chochlakis, M Dehghani, R Delerme, ...",
+    "year": "2024",
+    "venue": "arXiv preprint arXiv:2402.01703, 2024",
+    "citations": 3,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u5HHmVD_uO8C"
+  },
+  {
+    "title": "CVAT-BWV: A Web-Based Video Annotation Platform for Police Body-Worn Video",
+    "authors": "P Hejabi, AK Padte, P Golazizian, R Hebbar, J Trager, G Chochlakis, ...",
+    "year": "2024",
+    "venue": "International Joint Conferences on Artificial Intelligence Organization, 2024",
+    "citations": 2,
+    "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC"
+  }
+]
