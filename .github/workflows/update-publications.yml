@@ -32,6 +32,7 @@ jobs:
       - name: Update publications
         env:
           SCHOLAR_ID: 'icZ4Gd0AAAAJ'
+          SERP_API_KEY: ${{ secrets.SERP_API_KEY }}
         run: |
           python update_publications.py
       

@@ -11,120 +11,87 @@ import json
 import os
 import re
 import sys
-import time
 from typing import List, Dict
 
 # Configuration constants
 DEFAULT_SCHOLAR_ID = 'icZ4Gd0AAAAJ'  # Parsa Hejabi's Google Scholar ID
-SCRAPER_API_KEY_ENV = 'SCRAPER_API_KEY'
-SCHOLAR_REQUEST_DELAY = 2  # Seconds to wait before making Scholar requests
-PUBLICATION_PROCESS_DELAY = 1  # Seconds to wait between processing publications
+SERP_API_KEY_ENV = 'SERP_API_KEY'
 
 
-def fetch_publications_scholarly(scholar_id: str) -> List[Dict]:
+def fetch_publications_serpapi(scholar_id: str) -> List[Dict]:
     """
-    Fetch publications from Google Scholar using the scholarly library.
+    Fetch publications from Google Scholar using SerpAPI.
     
-    Note: This may fail due to Google Scholar's rate limiting or blocking.
+    SerpAPI provides a reliable API with built-in proxy rotation and anti-CAPTCHA handling.
     """
     try:
-        from scholarly import scholarly, ProxyGenerator
+        from serpapi import GoogleSearch
         
-        def setup_proxy() -> bool:
-            pg = ProxyGenerator()
-            proxy_configured = False
-
-            scraper_api_key = os.environ.get(SCRAPER_API_KEY_ENV, '').strip()
-
-            def attempt(config_fn, failure_message: str) -> bool:
-                try:
-                    configured = config_fn()
-                    if not configured:
-                        print(failure_message, file=sys.stderr)
-                    return configured
-                except Exception as proxy_error:
-                    print(f"{failure_message} ({proxy_error})", file=sys.stderr)
-                    return False
-
-            if scraper_api_key:
-                proxy_configured = attempt(
-                    lambda: pg.ScraperAPI(scraper_api_key),
-                    "Note: ScraperAPI proxy setup failed; falling back to free proxies.",
-                )
-
-            if not proxy_configured:
-                proxy_configured = attempt(
-                    pg.FreeProxies,
-                    "Note: Free proxy setup failed; proceeding without proxy.",
-                )
-
-            if proxy_configured:
-                scholarly.use_proxy(pg)
-                print("Using proxy to access Google Scholar...")
-            else:
-                print("Note: No proxy available; proceeding without proxy (requests may be rate limited).", file=sys.stderr)
-
-            return proxy_configured
-
-        proxy_configured = setup_proxy()
+        # Get API key from environment
+        api_key = os.environ.get(SERP_API_KEY_ENV, '').strip()
         
-        # Add a small delay to be respectful to Google's servers
-        time.sleep(SCHOLAR_REQUEST_DELAY)
+        if not api_key:
+            print(f"Warning: {SERP_API_KEY_ENV} environment variable is not set.", file=sys.stderr)
+            print("SerpAPI requires an API key to function. Please set the environment variable.", file=sys.stderr)
+            return []
         
-        # Search for author by ID
-        print(f"Searching for author with ID: {scholar_id}")
-        author = scholarly.search_author_id(scholar_id)
+        print(f"Fetching publications for author ID: {scholar_id} using SerpAPI...")
         
-        # Fill in author details including publications
-        print("Fetching author details and publications...")
-        author = scholarly.fill(author, sections=['publications'])
+        # Set up SerpAPI parameters
+        params = {
+            "engine": "google_scholar_author",
+            "author_id": scholar_id,
+            "api_key": api_key
+        }
+        
+        # Make the API request
+        search = GoogleSearch(params)
+        results = search.get_dict()
+        
+        # Extract articles from results
+        articles = results.get("articles", [])
+        print(f"Found {len(articles)} publications from SerpAPI")
         
         publications = []
-        pub_list = author.get('publications', [])
-        print(f"Found {len(pub_list)} publications")
-        
-        for i, pub in enumerate(pub_list):
-            try:
-                print(f"Processing publication {i+1}/{len(pub_list)}...")
-                # Fill in publication details
-                pub_details = scholarly.fill(pub)
-                
-                title = pub_details.get('bib', {}).get('title', 'Unknown Title')
-                authors = pub_details.get('bib', {}).get('author', 'Unknown Authors')
-                year = pub_details.get('bib', {}).get('pub_year', 'N/A')
-                venue = pub_details.get('bib', {}).get('venue', 'N/A')
-                citations = pub_details.get('num_citations', 0)
-                
-                # Get publication URL if available
-                pub_url = pub_details.get('pub_url', '')
-                eprint_url = pub_details.get('eprint_url', '')
-                url = pub_url or eprint_url
-                
-                publications.append({
-                    'title': title,
-                    'authors': authors,
-                    'year': year,
-                    'venue': venue,
-                    'citations': citations,
-                    'url': url
-                })
-                
-                # Be respectful with rate limiting
-                time.sleep(PUBLICATION_PROCESS_DELAY)
-            except Exception as pub_error:
-                print(f"Error processing publication {i+1}: {pub_error}", file=sys.stderr)
-                continue
+        for article in articles:
+            # Extract publication details
+            title = article.get('title', 'Unknown Title')
+            authors = article.get('authors', 'Unknown Authors')
+            year = article.get('year', 'N/A')
+            
+            # Get citations count
+            cited_by = article.get('cited_by', {})
+            citations = cited_by.get('value', 0) if isinstance(cited_by, dict) else 0
+            
+            # Get publication URL
+            url = article.get('link', '')
+            
+            # Extract venue/publication info if available
+            venue = article.get('publication', 'N/A')
+            
+            publications.append({
+                'title': title,
+                'authors': authors,
+                'year': str(year),
+                'venue': venue,
+                'citations': citations,
+                'url': url
+            })
         
         # Sort by year (descending) and then by citations
-        publications.sort(key=lambda x: (-(int(x['year']) if x['year'] != 'N/A' else 0), -x['citations']))
+        publications.sort(key=lambda x: (-(int(x['year']) if x['year'] != 'N/A' and str(x['year']).isdigit() else 0), -x['citations']))
         
         # Save to cache file
         if publications:
             save_publications_cache(publications)
         
         return publications
+    except ImportError as e:
+        print(f"Error: SerpAPI library not installed. Please install it with: pip install google-search-results", file=sys.stderr)
+        print(f"Details: {e}", file=sys.stderr)
+        return []
     except Exception as e:
-        print(f"Error fetching publications from Google Scholar: {e}", file=sys.stderr)
+        print(f"Error fetching publications from SerpAPI: {e}", file=sys.stderr)
         return []
 
 
@@ -223,9 +190,9 @@ def main():
     # Get Google Scholar ID from environment variable or use default
     scholar_id = os.environ.get('SCHOLAR_ID', DEFAULT_SCHOLAR_ID)
     
-    # Try to fetch from Google Scholar
-    print("Attempting to fetch publications from Google Scholar...")
-    publications = fetch_publications_scholarly(scholar_id)
+    # Try to fetch from Google Scholar via SerpAPI
+    print("Attempting to fetch publications from Google Scholar using SerpAPI...")
+    publications = fetch_publications_serpapi(scholar_id)
     
     # If fetching failed, try to load from cache
     if not publications:
