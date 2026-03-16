@@ -22,7 +22,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 3. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
    - Authors: AS Ziabari, A Omrani, P Hejabi, P Golazizian, B Kennedy, P Piray, ...
    - Year: 2024 | Venue: Proceedings of the 2024 Conference of the North American Chapter of the …, 2024
-   - Citations: 7
+   - Citations: 8
 
 4. **[A multi-perspective machine learning approach to evaluate police-driver interaction in Los Angeles](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u5HHmVD_uO8C)**
    - Authors: BAT Grahama, L Brown, G Chochlakis, M Dehghani, R Delerme, ...
@@ -38,5 +38,10 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
    - Authors: P Hejabi, AK Padte, P Golazizian, R Hebbar, J Trager, G Chochlakis, ...
    - Year: 2024 | Venue: International Joint Conferences on Artificial Intelligence Organization, 2024
    - Citations: 2
+
+7. **[Asymmetric Moral Metaperceptions: Consequences for Political Polarization and Paths to Correction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:IjCSPb-OGe4C)**
+   - Authors: Y Daryani, P Hejabi, M Dehghani
+   - Year:  | Venue: OSF, 0
+   - Citations: 0
 
 <!-- PUBLICATIONS_END -->
