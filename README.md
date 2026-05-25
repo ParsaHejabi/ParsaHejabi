@@ -32,7 +32,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 5. **[Evaluating Creativity and Deception in Large Language Models: A Simulation Framework for Multi-Agent Balderdash](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:9yKSN-GCB0IC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, P Golazizian, J Thomason, M Dehghani
    - Year: 2024 | Venue: ACL 2024, 2024
-   - Citations: 4
+   - Citations: 5
 
 6. **[A multi-perspective machine learning approach to evaluate police-driver interaction in Los Angeles](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u5HHmVD_uO8C)**
    - Authors: BAT Grahama, L Brown, G Chochlakis, M Dehghani, R Delerme, ...
@@ -42,6 +42,6 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 7. **[CVAT-BWV: A Web-Based Video Annotation Platform for Police Body-Worn Video](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC)**
    - Authors: P Hejabi, AK Padte, P Golazizian, R Hebbar, J Trager, G Chochlakis, ...
    - Year: 2024 | Venue: International Joint Conferences on Artificial Intelligence Organization, 2024
-   - Citations: 2
+   - Citations: 3
 
 <!-- PUBLICATIONS_END -->
