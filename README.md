@@ -22,7 +22,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 3. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, M Dehghani
    - Year: 2025 | Venue: arXiv preprint arXiv:2510.14242, 2025
-   - Citations: 0
+   - Citations: 1
 
 4. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
    - Authors: AS Ziabari, A Omrani, P Hejabi, P Golazizian, B Kennedy, P Piray, ...
