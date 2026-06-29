@@ -11,18 +11,18 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 
 1. **[The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspectives in Body-Worn Camera Footage](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:UeHWp8X0CEIC)**
    - Authors: P Golazizian, E Rahmati, J Trager, Z Sourati, N Ghazizadeh, ...
-   - Year: 2026 | Venue: arXiv preprint arXiv:2602.10339, 2026
+   - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
    - Citations: 1
 
-2. **[Asymmetric Moral Metaperceptions: Consequences for Political Polarization and Paths to Correction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:IjCSPb-OGe4C)**
+2. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
+   - Authors: P Hejabi, E Rahmati, AS Ziabari, M Dehghani
+   - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
+   - Citations: 1
+
+3. **[Asymmetric Moral Metaperceptions: Consequences for Political Polarization and Paths to Correction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:IjCSPb-OGe4C)**
    - Authors: Y Daryani, P Hejabi, M Dehghani
    - Year: 2026 | Venue: OSF, 2026
    - Citations: 0
-
-3. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
-   - Authors: P Hejabi, E Rahmati, AS Ziabari, M Dehghani
-   - Year: 2025 | Venue: arXiv preprint arXiv:2510.14242, 2025
-   - Citations: 1
 
 4. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
    - Authors: AS Ziabari, A Omrani, P Hejabi, P Golazizian, B Kennedy, P Piray, ...
