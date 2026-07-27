@@ -9,13 +9,13 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 
 *Publications are automatically updated weekly from my [Google Scholar profile](https://scholar.google.com/citations?user=icZ4Gd0AAAAJ&hl=en).*
 
-1. **[The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspectives in Body-Worn Camera Footage](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:UeHWp8X0CEIC)**
-   - Authors: P Golazizian, E Rahmati, J Trager, Z Sourati, N Ghazizadeh, ...
-   - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
-   - Citations: 1
-
-2. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
+1. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, M Dehghani
+   - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
+   - Citations: 2
+
+2. **[The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspectives in Body-Worn Camera Footage](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:UeHWp8X0CEIC)**
+   - Authors: P Golazizian, E Rahmati, J Trager, Z Sourati, N Ghazizadeh, ...
    - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
    - Citations: 1
 
