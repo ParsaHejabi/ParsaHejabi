@@ -39,9 +39,14 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
    - Year: 2024 | Venue: arXiv preprint arXiv:2402.01703, 2024
    - Citations: 4
 
-7. **[CVAT-BWV: A Web-Based Video Annotation Platform for Police Body-Worn Video](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC)**
+7. **[Cvat-bwv: A web-based video annotation platform for police body-worn video](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC)**
    - Authors: P Hejabi, AK Padte, P Golazizian, R Hebbar, J Trager, G Chochlakis, ...
    - Year: 2024 | Venue: International Joint Conferences on Artificial Intelligence Organization, 2024
    - Citations: 3
+
+8. **[Community-Informed AI Models for Police Accountability](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:YsMSGLbcyi4C)**
+   - Authors: BAT Graham, L Brown, G Chochlakis, M Dehghani, R Delerme, ...
+   - Year: 2024 | Venue: arXiv e-prints, arXiv: 2402.01703, 2024
+   - Citations: 0
 
 <!-- PUBLICATIONS_END -->
