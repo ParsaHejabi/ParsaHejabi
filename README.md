@@ -27,7 +27,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 4. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
    - Authors: AS Ziabari, A Omrani, P Hejabi, P Golazizian, B Kennedy, P Piray, ...
    - Year: 2024 | Venue: Proceedings of the 2024 Conference of the North American Chapter of the …, 2024
-   - Citations: 9
+   - Citations: 10
 
 5. **[Evaluating Creativity and Deception in Large Language Models: A Simulation Framework for Multi-Agent Balderdash](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:9yKSN-GCB0IC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, P Golazizian, J Thomason, M Dehghani
