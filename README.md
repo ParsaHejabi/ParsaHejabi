@@ -12,7 +12,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 1. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, M Dehghani
    - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
-   - Citations: 2
+   - Citations: 3
 
 2. **[The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspectives in Body-Worn Camera Footage](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:UeHWp8X0CEIC)**
    - Authors: P Golazizian, E Rahmati, J Trager, Z Sourati, N Ghazizadeh, ...
