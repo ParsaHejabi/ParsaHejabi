@@ -12,39 +12,44 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 1. **[Flip-Flop Consistency: Unsupervised Training for Robustness to Prompt Perturbations in LLMs](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:qjMakFHDy7sC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, M Dehghani
    - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
-   - Citations: 3
+   - Citations: 4
 
 2. **[The Subjectivity of Respect in Police Traffic Stops: Modeling Community Perspectives in Body-Worn Camera Footage](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:UeHWp8X0CEIC)**
    - Authors: P Golazizian, E Rahmati, J Trager, Z Sourati, N Ghazizadeh, ...
    - Year: 2026 | Venue: Proceedings of the 64th Annual Meeting of the Association for Computational …, 2026
    - Citations: 1
 
-3. **[Asymmetric Moral Metaperceptions: Consequences for Political Polarization and Paths to Correction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:IjCSPb-OGe4C)**
+3. **[Voltic: Distinguishing Volatility from Stochasticity in Recurrent Memory](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:eQOLeE2rZwMC)**
+   - Authors: P Hejabi, M Dehghani, P Piray
+   - Year: 2026 | Venue: arXiv preprint arXiv:2610.05700, 2026
+   - Citations: 0
+
+4. **[Asymmetric Moral Metaperceptions: Consequences for Political Polarization and Paths to Correction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:IjCSPb-OGe4C)**
    - Authors: Y Daryani, P Hejabi, M Dehghani
    - Year: 2026 | Venue: OSF, 2026
    - Citations: 0
 
-4. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
+5. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
    - Authors: AS Ziabari, A Omrani, P Hejabi, P Golazizian, B Kennedy, P Piray, ...
    - Year: 2024 | Venue: Proceedings of the 2024 Conference of the North American Chapter of the …, 2024
    - Citations: 11
 
-5. **[Evaluating Creativity and Deception in Large Language Models: A Simulation Framework for Multi-Agent Balderdash](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:9yKSN-GCB0IC)**
+6. **[Evaluating Creativity and Deception in Large Language Models: A Simulation Framework for Multi-Agent Balderdash](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:9yKSN-GCB0IC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, P Golazizian, J Thomason, M Dehghani
    - Year: 2024 | Venue: ACL 2024, 2024
    - Citations: 5
 
-6. **[Cvat-bwv: A web-based video annotation platform for police body-worn video](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC)**
+7. **[Cvat-bwv: A web-based video annotation platform for police body-worn video](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC)**
    - Authors: P Hejabi, AK Padte, P Golazizian, R Hebbar, J Trager, G Chochlakis, ...
    - Year: 2024 | Venue: International Joint Conferences on Artificial Intelligence Organization, 2024
    - Citations: 4
 
-7. **[A multi-perspective machine learning approach to evaluate police-driver interaction in Los Angeles](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u5HHmVD_uO8C)**
+8. **[A multi-perspective machine learning approach to evaluate police-driver interaction in Los Angeles](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u5HHmVD_uO8C)**
    - Authors: BAT Grahama, L Brown, G Chochlakis, M Dehghani, R Delerme, ...
    - Year: 2024 | Venue: arXiv preprint arXiv:2402.01703, 2024
    - Citations: 4
 
-8. **[Community-Informed AI Models for Police Accountability](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:YsMSGLbcyi4C)**
+9. **[Community-Informed AI Models for Police Accountability](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:YsMSGLbcyi4C)**
    - Authors: BAT Graham, L Brown, G Chochlakis, M Dehghani, R Delerme, ...
    - Year: 2024 | Venue: arXiv e-prints, arXiv: 2402.01703, 2024
    - Citations: 0
