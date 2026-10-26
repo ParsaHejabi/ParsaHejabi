@@ -26,7 +26,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 
 4. **[Asymmetric Moral Metaperceptions: Consequences for Political Polarization and Paths to Correction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:IjCSPb-OGe4C)**
    - Authors: Y Daryani, P Hejabi, M Dehghani
-   - Year: 2026
+   - Year: 2026 | Venue: OSF, 2026
    - Citations: 0
 
 5. **[Reinforced multiple instance selection for speaker attribute prediction](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:u-x6o8ySG0sC)**
@@ -37,7 +37,7 @@ I'm a third-year PhD student in Computer Science. In my projects, I focused more
 6. **[Evaluating Creativity and Deception in Large Language Models: A Simulation Framework for Multi-Agent Balderdash](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:9yKSN-GCB0IC)**
    - Authors: P Hejabi, E Rahmati, AS Ziabari, P Golazizian, J Thomason, M Dehghani
    - Year: 2024 | Venue: ACL 2024, 2024
-   - Citations: 5
+   - Citations: 6
 
 7. **[Cvat-bwv: A web-based video annotation platform for police body-worn video](https://scholar.google.com/citations?view_op=view_citation&hl=en&user=icZ4Gd0AAAAJ&citation_for_view=icZ4Gd0AAAAJ:2osOgNQ5qMEC)**
    - Authors: P Hejabi, AK Padte, P Golazizian, R Hebbar, J Trager, G Chochlakis, ...
